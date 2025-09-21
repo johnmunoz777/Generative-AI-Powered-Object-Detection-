@@ -1,0 +1,7 @@
+path: ./drive/MyDrive/peru_project
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['helmet', 'license_plate', 'no_helmet', 'no_plate', 'no_vest', 'vest']
