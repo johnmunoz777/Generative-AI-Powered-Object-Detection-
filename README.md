@@ -5,14 +5,14 @@
 
 ---
 
-## 🎯 Executive Summary
+## Executive Summary
 
 This repository contains the implementation of an Motorcycle Compliance Object Detection Model. <br>
 We developed an automated compliance monitoring system capable of real-time detection of safety violations. <br>
 We utilized real-world data as well as synthetic video data generated with Google’s Veo 2 and Veo 3 models  <br>
 
 
-### 📊 Key Achievement
+### Key Achievement
 - **81% mAP50** accuracy achieved through hybrid synthetic-real data approach
 - **86% precision** in detecting safety compliance violations
 - **Real-time processing** capability for traffic monitoring systems
@@ -20,7 +20,7 @@ We utilized real-world data as well as synthetic video data generated with Googl
 ---
 
 [![Model Results](example_gifs/model_results.gif)](example_gifs/model_results.gif)
-# 🚨 Problem Statement
+# Problem Statement
 
 In April of 2025, Peru passed a new law requiring all motorcycle operators must wear certified helmets and reflective vests displaying license plate numbers.
 Manual enforcement presents significant challenges:
@@ -30,18 +30,18 @@ Manual enforcement presents significant challenges:
 - Inconsistent enforcement across regions
 - Delayed response to violations
 
-### 💡 Our Solution
+###Our Solution
 An automated detection system utilizing synthetic data generation to overcome data scarcity challenges while maintaining high accuracy in real-world deployments.
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
 
 ---
-## 🔬 Methodology
+## Methodology
 ### Data Generation Pipeline
 
 We developed three progressive models, each building upon lessons learned from previous iterations:
 
-#### 📝 Model 1: Text-to-Video Generation
+#### Model 1: Text-to-Video Generation
 - **148 synthetic videos** generated via text prompts
 - **2,220 frames** extracted (15 frames/video)
 - **Resolution:** 1280x720 pixels
@@ -51,7 +51,7 @@ We developed three progressive models, each building upon lessons learned from p
 [![Model Resu](example_gifs/e.gif)](example_gifs/e.gif)
 
 
-#### 🖼️ Model 2: Image-Enhanced Generation
+#### Model 2: Image-Enhanced Generation
 - **Base:** 2,220 frames from Model 1
 - **Enhancement:** 100 videos via image-to-video prompting
 - **Total Dataset:** 3,210 images
@@ -69,7 +69,7 @@ We developed three progressive models, each building upon lessons learned from p
 </p>
 
 
-#### 🔄 Model 3: Hybrid Approach
+#### Model 3: Hybrid Approach
 - **Synthetic Data:** 3,210 images from Models 1&2
 - **Real-World Data:** 512 authentic images with augmentation
 - **Final Dataset:** 4,234 images
@@ -81,14 +81,14 @@ We developed three progressive models, each building upon lessons learned from p
 
 | Class | Model 1 | Model 2 | Model 3 | Balance Status |
 |-------|---------|---------|---------|----------------|
-| 🪖 Helmet | 1,842 | 2,456 | 2,658 | ✅ Well-represented |
-| ❌ No Helmet | 1,523 | 2,012 | 2,154 | ✅ Well-represented |
-| 🦺 Vest | 1,785 | 2,389 | 2,877 | ✅ Well-represented |
-| ⚠️ No Vest | 2,102 | 2,654 | 3,054 | ✅ Well-represented |
-| 🔢 License Plate | 1,456 | 1,923 | 2,341 | ✅ Well-represented |
+| 🪖 Helmet | 1,842 | 2,456 | 2,658 | Well-represented |
+| ❌ No Helmet | 1,523 | 2,012 | 2,154 | Well-represented |
+| 🦺 Vest | 1,785 | 2,389 | 2,877 | Well-represented |
+| ⚠️ No Vest | 2,102 | 2,654 | 3,054 | Well-represented |
+| 🔢 License Plate | 1,456 | 1,923 | 2,341 | Well-represented |
 | 🚫 No Plate | 512 | 689 | 774 | ⚠️ Under-represented |
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### YOLOv8 Configuration
 ```yaml
@@ -161,33 +161,33 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 ## 📁 Project Structure  
 
-### 📦 Dropbox Exports  
+###  Dropbox Exports  
 - **Model 1 Text-To-Prompt Video Results/** – Synthetic videos generated using text-to-prompt.  
 - **Model 2 Videos Text-To-Image Result/** – Synthetic videos generated using image-to-prompt.  
 
-### 🧠 YOLO Model Results  
+###  YOLO Model Results  
 - **all_model_results.py** – Script to build and evaluate YOLO models.  
 - **model-weights.pt** – Trained YOLO weights (from Model 3).  
 
-### ☁️ Google Drive Datasets  
+### Google Drive Datasets  
 - **Model 1/** – Images and labels from text-to-prompt.  
 - **Model 2/** – Images and labels from text + image-to-prompt.  
 - **Model 3/** – Hybrid dataset (synthetic + real-world images).  
 - **data.yaml** – YOLO dataset configuration (classes + train/val/test).  
 
-### 🛠️ Pre-Processing  
+### Pre-Processing  
 - **extract_frames.py** – Extracts frames from videos.  
 - **split_images.py** – Splits data into train/val/test sets.  
 - **image_augmentation.py** – Applies augmentations (scaling, brightness, contrast, etc.).  
 
-### 🎥 Object Detection on Videos  
+### Object Detection on Videos  
 - **yolo_model.py** – YOLO inference on custom dataset.  
 - **yolo_model_with_coco.py** – YOLO inference using COCO classes for comparison.  
 
-### 📊 Dashboard  
+###  Dashboard  
 - **finished_dashboard.py** – Streamlit dashboard for visualizing model performance.  
 
-### 🧪 Test Examples  
+###  Test Examples  
 - **test_examples/** – Example images and files used in dashboard + OCR tests.  
 
 
@@ -253,7 +253,7 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 
 ---
 
-### 📊 Dashboards  
+### Dashboards  
 - **No-Vest Detections**  
   - Tracks riders with missing vests in real time.  
   - Links detected riders to license plates.  
@@ -268,7 +268,7 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
   - Real-time detection overlay and violation statistics dashboard.  
 
 
-## 📊 Dashboard Examples  
+##  Dashboard Examples  
 
 <p align="center">
   <img src="pictures_for_read_me/dashboard_example.jpg" alt="Dashboard Example 1" width="45%"/>
