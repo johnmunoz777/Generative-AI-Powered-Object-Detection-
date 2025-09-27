@@ -77,7 +77,7 @@ We developed three progressive models, each building upon lessons learned from p
 
 ![Model 3 Generation](images/placeholder_model3_generation.gif)
 
-### 📈 Class Distribution Analysis
+### Class Distribution Analysis
 
 | Class | Model 1 | Model 2 | Model 3 | Balance Status |
 |-------|---------|---------|---------|----------------|
@@ -159,7 +159,7 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 
 
-## 📁 Project Structure  
+## Project Structure  
 
 ###  Dropbox Exports  
 - **Model 1 Text-To-Prompt Video Results/** – Synthetic videos generated using text-to-prompt.  
@@ -211,7 +211,7 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 
 ##  Hugging Face Dashboard – Compliance Detector  
-[🔗 Live Demo on Hugging Face](https://huggingface.co/spaces/johngmunoz/Motorcycle)
+[ Live Demo on Hugging Face](https://huggingface.co/spaces/johngmunoz/Motorcycle)
 
 The Compliance Detector is an interactive Streamlit dashboard deployed on Hugging Face Spaces. It provides multiple modules for video and image-based motorcycle compliance detection.
 
