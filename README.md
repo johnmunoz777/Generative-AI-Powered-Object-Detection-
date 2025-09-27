@@ -20,3 +20,25 @@ We utilized real-world data as well as synthetic video data generated with Googl
 ---
 
 [![Model Results](example_gifs/model_results.gif)](example_gifs/model_results.gif)
+# 🚨 Problem Statement
+
+In April of 2025, Peru passed a new law requiring all motorcycle operators must wear certified helmets and reflective vests displaying license plate numbers.
+Manual enforcement presents significant challenges:
+
+- Resource-intensive manual inspections
+- Limited scalability for nationwide coverage
+- Inconsistent enforcement across regions
+- Delayed response to violations
+
+### 💡 Our Solution
+An automated detection system utilizing synthetic data generation to overcome data scarcity challenges while maintaining high accuracy in real-world deployments.
+
+[![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
+
+---
+
+## 🔬 Methodology
+
+### Data Generation Pipeline
+
+We developed three progressive models, each building upon lessons learned from previous iterations:
