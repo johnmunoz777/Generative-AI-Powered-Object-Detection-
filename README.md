@@ -30,7 +30,7 @@ Manual enforcement presents significant challenges:
 - Inconsistent enforcement across regions
 - Delayed response to violations
 
-###Our Solution
+### Our Solution
 An automated detection system utilizing synthetic data generation to overcome data scarcity challenges while maintaining high accuracy in real-world deployments.
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
@@ -86,7 +86,7 @@ We developed three progressive models, each building upon lessons learned from p
 | 🦺 Vest | 1,785 | 2,389 | 2,877 | Well-represented |
 | ⚠️ No Vest | 2,102 | 2,654 | 3,054 | Well-represented |
 | 🔢 License Plate | 1,456 | 1,923 | 2,341 | Well-represented |
-| 🚫 No Plate | 512 | 689 | 774 | ⚠️ Under-represented |
+| 🚫 No Plate | 512 | 689 | 774 |  Under-represented |
 
 ## Technical Architecture
 
@@ -105,7 +105,7 @@ GPU: NVIDIA A100 (40GB VRAM)
 Training Infrastructure
 Epochs: 50 (Models 1&2), 100 (Model 3)
 ```
-## 📊 Model Evaluation Results
+## Model Evaluation Results
 | Model | Dataset                          | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
 |-------|----------------------------------|---------------|------------|-------|----------|
 | 1     | Text-to-Prompt (Synthetic only)  | 0.675         | 0.513      | 0.352 | 0.174    |
@@ -114,16 +114,16 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 <br>
 
 
-## 🔎 Class-Level Performance Improvements
+##  Class-Level Performance Improvements
 
 | Class        | Model 1 (Text) | Model 2 (Text + Image) | Model 3 (Hybrid) | Key Observations |
 |--------------|----------------|-------------------------|------------------|------------------|
-| **Helmet**   | mAP50: 0.52 ❌ | mAP50: 0.90 ✅ | mAP50: 0.92 ✅ | Huge jump from Model 2; near-perfect in Model 3. |
-| **Vest**     | Very low ❌     | Moderate ≈0.70 ⚠️      | 0.91 / 0.87 ✅   | Real data in Model 3 enabled strong generalization. |
-| **License Plate** | 0.64 ⚠️   | ≈0.85 ✅                | 0.89 / 0.86 ✅   | Solid across all; incremental lift in Model 3. |
-| **No Plate** | 0.00 ❌        | 0.36 ⚠️                 | 0.45 ✅          | Failure in Model 1; only detectable in 2+; Model 3 shows progress. |
-| **No Vest**  | Weak ❌        | Low–Moderate ⚠️         | <0.50 ⚠️         | Still challenging; Model 3 best but below 0.50 mAP. |
-| **No Helmet**| Weak ❌        | Moderate ⚠️             | ≈0.80+ ✅        | Major lift in Model 3; strong generalization. |
+| **Helmet**   | mAP50: 0.52 | mAP50: 0.90  | mAP50: 0.92  | Huge jump from Model 2; near-perfect in Model 3. |
+| **Vest**     | Very low     | Moderate ≈0.70       | 0.91 / 0.87    | Real data in Model 3 enabled strong generalization. |
+| **License Plate** | 0.64  | ≈0.85                 | 0.89 / 0.86    | Solid across all; incremental lift in Model 3. |
+| **No Plate** | 0.00       | 0.36                  | 0.45           | Failure in Model 1; only detectable in 2+; Model 3 shows progress. |
+| **No Vest**  | Weak       | Low–Moderate         | <0.50          | Still challenging; Model 3 best but below 0.50 mAP. |
+| **No Helmet**| Weak         | Moderate             | ≈0.80+         | Major lift in Model 3; strong generalization. |
 
 <br>
 
@@ -192,7 +192,7 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 
 
-## 📂 Data Resources  
+##  Data Resources  
 
 ### 🎬 Video Results  
 - [Model 1 Videos – Dropbox Repository](https://www.dropbox.com/scl/fo/6jhvwh6lq166buio6o4vi/AEEvkHp8TXHU-5OpbtYprX0?rlkey=jvksmrftng7v1hwn3zjlrjxht&st=9fodicvg&dl=0)  
@@ -205,12 +205,12 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 ---
 
-📜 **Supporting Script**  
+ **Supporting Script**  
 - **all_model_results.py** – Results of building YOLO models in Colab.  
 
 
 
-## 🚦 Hugging Face Dashboard – Compliance Detector  
+##  Hugging Face Dashboard – Compliance Detector  
 [🔗 Live Demo on Hugging Face](https://huggingface.co/spaces/johngmunoz/Motorcycle)
 
 The Compliance Detector is an interactive Streamlit dashboard deployed on Hugging Face Spaces. It provides multiple modules for video and image-based motorcycle compliance detection.
@@ -233,7 +233,7 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 
 ---
 
-### 🖼️ Image Detections  
+###  Image Detections  
 - **Upload an Image** – Supports JPG and PNG.  
 - **Custom model (.pt)** – Loads trained YOLO model weights.  
 - **OCR Options:**  
