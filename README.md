@@ -229,7 +229,7 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 - **Output:**  
   - Bounding box detections for helmets, vests, license plates, and violations.  
   - Live video preview with adjustable performance settings.  
-![Model Resul](example_gifs/final_model.gif)](example_gifs/final_model.gif)
+![Model Resul](example_gifs/final_model.gif)
 
 ---
 
