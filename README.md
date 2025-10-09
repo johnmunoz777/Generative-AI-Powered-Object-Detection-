@@ -275,4 +275,4 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 
 ---
 
-> Disclaimer: ALL video data used in this demo was obtained from publicly available sources and is used strictly for non-commerical, educational research purposes.
+> Disclaimer: ALL video data used in this demo was obtained from publicly available sources and is used strictly for non-commerical, educational research purposes. Videos were attained from Panamericana Television  [ Panamericana Televisiob](https://panamericana.pe/)
