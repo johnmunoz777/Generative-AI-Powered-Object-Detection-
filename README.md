@@ -251,8 +251,9 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 </p>
 
 <br>
-(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television <br>
-(Video source) <a href="https://www.pexels.com/" target="_blank">Pexels</a>   <br>
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television 
+<br>
+(Video source) <a href="https://www.pexels.com/" target="_blank">Pexels</a> 
 
 ---
 
@@ -283,7 +284,12 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
   <img src="pictures_for_read_me/no_vest_ex.jpg" alt="No-Vest Example" width="45%"/>
 </p>
 <br>
-(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television <br>
+<br>
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television 
+<br>
+(Video source) <a href="https://www.pexels.com/" target="_blank">Pexels</a> 
+
+
 ---
 <br>
 
