@@ -21,7 +21,7 @@ We utilized real-world data as well as synthetic video data generated with Googl
 
 [![Model Results](example_gifs/model_results.gif)](example_gifs/model_results.gif)
 <br>
-(source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a 
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a 
 # Problem Statement
 
 In April of 2025, Peru passed a new law requiring all motorcycle riders to wear certified helmets and reflective vests displaying their license plate numbers.
@@ -36,7 +36,8 @@ Manual enforcement presents significant challenges:
 An automated detection system utilizing synthetic data generation to overcome data challenges while maintaining high accuracy in real-world deployments.
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
-
+<br>
+(Video source) https://www.pexels.comPexels</a>
 ---
 ## Methodology
 ### Data Generation Pipeline
@@ -226,6 +227,8 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
   - Live video preview with adjustable performance settings.  
 ![Model Resul](example_gifs/final_model.gif)
 
+<br>
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a
 ---
 
 ###  Image Detections  
