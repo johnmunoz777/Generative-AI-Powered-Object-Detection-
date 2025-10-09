@@ -37,7 +37,9 @@ An automated detection system utilizing synthetic data generation to overcome da
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
 <br>
-(Video source) https://www.pexels.comPexels</a>
+<a href="https://www.pexels.com/" target="_blank">Video source</a>
+
+
 ---
 ## Methodology
 ### Data Generation Pipeline
