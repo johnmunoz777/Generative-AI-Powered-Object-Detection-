@@ -20,7 +20,8 @@ We utilized real-world data as well as synthetic video data generated with Googl
 ---
 
 [![Model Results](example_gifs/model_results.gif)](example_gifs/model_results.gif)
-(source)Panamericana Television 
+<br>
+(source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a 
 # Problem Statement
 
 In April of 2025, Peru passed a new law requiring all motorcycle riders to wear certified helmets and reflective vests displaying their license plate numbers.
@@ -275,5 +276,6 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 </p>
 
 ---
-(source)Panamericana Television 
+<br>
+(source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a
 > Disclaimer: ALL video data used in this demo was obtained from publicly available sources and is used strictly for non-commerical, educational research purposes. Videos were attained from Panamericana Television  [ Panamericana Televisiob](https://panamericana.pe/)
