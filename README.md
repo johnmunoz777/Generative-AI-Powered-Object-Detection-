@@ -108,9 +108,9 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 ## Model Evaluation Results
 | Model | Dataset                          | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
 |-------|----------------------------------|---------------|------------|-------|----------|
-| 1     | Text-to-Prompt (Synthetic only)  | 0.675         | 0.513      | 0.352 | 0.174    |
-| 2     | Image-to-Prompt (Synthetic + extra) | 0.737      | 0.635      | 0.439 | 0.207    |
-| 3     | Hybrid (Synthetic + Real images) | 0.860         | 0.799      | 0.708 | 0.398    |
+| 1     | Text-to-Prompt (Synthetic only)  | 0.67         | 0.25      | 0.35 | 0.17    |
+| 2     | Image-to-Prompt (Synthetic + extra) | 0.73      | 0.56      | 0.63 | 0.30    |
+| 3     | Hybrid (Synthetic + Real images) | 0.86         | 0.77      | 0.80 | 0.39    |
 <br>
 
 
@@ -118,12 +118,12 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 | Class        | Model 1 (Text) | Model 2 (Text + Image) | Model 3 (Hybrid) | Key Observations |
 |--------------|----------------|-------------------------|------------------|------------------|
-| **Helmet**   | mAP50: 0.52 | mAP50: 0.90  | mAP50: 0.92  | Huge jump from Model 2; near-perfect in Model 3. |
-| **Vest**     | Very low     | Moderate ≈0.70       | 0.91 / 0.87    | Real data in Model 3 enabled strong generalization. |
-| **License Plate** | 0.64  | ≈0.85                 | 0.89 / 0.86    | Solid across all; incremental lift in Model 3. |
+| **Helmet**   | mAP50: 0.52 | mAP50: 0.90  | mAP50: 0.97  | Huge jump from Model 2; near-perfect in Model 3. |
+| **Vest**     | .40     |     0.78       | 0.94    | Real data in Model 3 enabled strong generalization. |
+| **License Plate** | 0.64  | 0.70                 | .90    | Solid across all; incremental lift in Model 3. |
 | **No Plate** | 0.00       | 0.36                  | 0.45           | Failure in Model 1; only detectable in 2+; Model 3 shows progress. |
-| **No Vest**  | Weak       | Low–Moderate         | <0.50          | Still challenging; Model 3 best but below 0.50 mAP. |
-| **No Helmet**| Weak         | Moderate             | ≈0.80+         | Major lift in Model 3; strong generalization. |
+| **No Vest**  | .35       |  .60        | .74          | Still challenging; Model 3 best but below 0.50 mAP. |
+| **No Helmet**| .21         |   .47          | .84         | Major lift in Model 3; strong generalization. |
 
 <br>
 
