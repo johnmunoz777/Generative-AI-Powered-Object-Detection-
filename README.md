@@ -116,12 +116,12 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 
 | Class        | Model 1 (Text) mAP50 | Model 2 (Text + Image) mAP50 | Model 3 (Hybrid) mAP50 | Key Observations |
 |--------------|----------------|-------------------------|------------------|------------------|
-| **Helmet**   | 0.51 | 0.90  |  0.97  |  Large Increase for Model 2;  Best Scores in Model 3. |
+| **Helmet**   | 0.51 | 0.90  |  0.97  |  Large Increase for Model 2,  Best Scores in Model 3. |
 | **Vest**     | .40     |     0.78       | 0.94    | Real data in Model 3 enabled strong generalization. |
 | **License Plate** | 0.64  | 0.70                 | .90    |   Best performance in Model 3. |
-| **No Plate** | 0.00       | 0.36                  | 0.45           |No detection in Model 1; Slight increasein Model 2; Model 3 moderate detection. |
-| **No Vest**  | .35       |  .60        | .74          | Model 1 & Model 2 moderate performance; Model 3 performed best. |
-| **No Helmet**| .21         |   .47          | .84         | Major increase in performance in Model 3; |
+| **No Plate** | 0.00       | 0.36                  | 0.45           |No detection in Model 1, Slight increasein Model 2, Model 3 moderate detection. |
+| **No Vest**  | .35       |  .60        | .74          | Model 1 & Model 2 moderate performance, Model 3 performed best. |
+| **No Helmet**| .21         |   .47          | .84         | Major increase in performance in Model 3. |
 
 <br>
 
