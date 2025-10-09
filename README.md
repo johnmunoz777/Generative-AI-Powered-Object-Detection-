@@ -79,14 +79,7 @@ We developed three Object Detection Models, each building upon the previous mode
 
 ### Class Distribution Analysis
 
-| Class | Model 1 | Model 2 | Model 3 | Balance Status |
-|-------|---------|---------|---------|----------------|
-|  Helmet | 1,842 | 2,456 | 2,658 | Well-represented |
-|  No Helmet | 1,523 | 2,012 | 2,154 | Well-represented |
-|  Vest | 1,785 | 2,389 | 2,877 | Well-represented |
-|  No Vest | 2,102 | 2,654 | 3,054 | Well-represented |
-|  License Plate | 1,456 | 1,923 | 2,341 | Well-represented |
-|  No Plate | 512 | 689 | 774 |  Under-represented |
+[![Model Results](pictures_for_read_me/class_count.jpg)](example_gifs/class_count.jpg)
 
 ## Technical Architecture
 
