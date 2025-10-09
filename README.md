@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-This repository contains the implementation of an Motorcycle Compliance Object Detection Model. <br>
+This repository contains the implementation of an Motorcycle Safety Compliance Object Detection Model. <br>
 We developed an automated compliance monitoring system capable of real-time detection of safety violations. <br>
 We utilized real-world data as well as synthetic video data generated with Google’s Veo 2 and Veo 3 models  <br>
 
@@ -22,7 +22,7 @@ We utilized real-world data as well as synthetic video data generated with Googl
 [![Model Results](example_gifs/model_results.gif)](example_gifs/model_results.gif)
 # Problem Statement
 
-In April of 2025, Peru passed a new law requiring all motorcycle operators must wear certified helmets and reflective vests displaying license plate numbers.
+In April of 2025, Peru passed a new law requiring all motorcycle riders to wear certified helmets and reflective vests displaying their license plate numbers.
 Manual enforcement presents significant challenges:
 
 - Resource-intensive manual inspections
@@ -31,7 +31,7 @@ Manual enforcement presents significant challenges:
 - Delayed response to violations
 
 ### Our Solution
-An automated detection system utilizing synthetic data generation to overcome data scarcity challenges while maintaining high accuracy in real-world deployments.
+An automated detection system utilizing synthetic data generation to overcome data challenges while maintaining high accuracy in real-world deployments.
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
 
@@ -39,7 +39,7 @@ An automated detection system utilizing synthetic data generation to overcome da
 ## Methodology
 ### Data Generation Pipeline
 
-We developed three progressive models, each building upon lessons learned from previous iterations:
+We developed three Object Detection Models, each building upon the previous model:
 
 #### Model 1: Text-to-Video Generation
 - **148 synthetic videos** generated via text prompts
@@ -53,7 +53,7 @@ We developed three progressive models, each building upon lessons learned from p
 
 #### Model 2: Image-Enhanced Generation
 - **Base:** 2,220 frames from Model 1
-- **Enhancement:** 100 videos via image-to-video prompting
+- **Enhancement:** 100 videos via image-to-video prompting (10 frames/video)
 - **Total Dataset:** 3,210 images
 - **Improvement:** Greater scene diversity and realism
 
@@ -93,37 +93,37 @@ We developed three progressive models, each building upon lessons learned from p
 ### YOLOv8 Configuration
 ```yaml
 # Model Specifications
-architecture: YOLOv8l (Large variant)
+architecture: YOLOv8l (Large)
 pretrained_weights: COCO dataset
 input_resolution: 640x640
 optimizer: AdamW
 learning_rate: 0.001
 batch_size: 16
 augmentation: True
-Platform: Google Colab Pro+
-GPU: NVIDIA A100 (40GB VRAM)
+Platform: Google Colab 
+GPU: NVIDIA A100
 Training Infrastructure
 Epochs: 50 (Models 1&2), 100 (Model 3)
 ```
 ## Model Evaluation Results
 | Model | Dataset                          | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
 |-------|----------------------------------|---------------|------------|-------|----------|
-| 1     | Text-to-Prompt (Synthetic only)  | 0.67         | 0.25      | 0.35 | 0.17    |
-| 2     | Image-to-Prompt (Synthetic + extra) | 0.73      | 0.56      | 0.63 | 0.30    |
-| 3     | Hybrid (Synthetic + Real images) | 0.86         | 0.77      | 0.80 | 0.39    |
+| 1     | Text-to-Prompt (Synthetic only)  | 0.68         | 0.25      | 0.35 | 0.17    |
+| 2     | Image-to-Prompt (Synthetic + extra) | 0.74      | 0.57      | 0.64 | 0.31    |
+| 3     | Hybrid (Synthetic + Real images) | 0.86         | 0.79      | 0.81 | 0.40    |
 <br>
 
 
 ##  Class-Level Performance Improvements
 
-| Class        | Model 1 (Text) | Model 2 (Text + Image) | Model 3 (Hybrid) | Key Observations |
+| Class        | Model 1 (Text) mAP50 | Model 2 (Text + Image) mAP50 | Model 3 (Hybrid) mAP50 | Key Observations |
 |--------------|----------------|-------------------------|------------------|------------------|
-| **Helmet**   | mAP50: 0.52 | mAP50: 0.90  | mAP50: 0.97  | Huge jump from Model 2; near-perfect in Model 3. |
+| **Helmet**   | 0.51 | 0.90  |  0.97  | Huge jump from Model 2;  Best Scores in Model 3. |
 | **Vest**     | .40     |     0.78       | 0.94    | Real data in Model 3 enabled strong generalization. |
-| **License Plate** | 0.64  | 0.70                 | .90    | Solid across all; incremental lift in Model 3. |
-| **No Plate** | 0.00       | 0.36                  | 0.45           | Failure in Model 1; only detectable in 2+; Model 3 shows progress. |
-| **No Vest**  | .35       |  .60        | .74          | Still challenging; Model 3 best but below 0.50 mAP. |
-| **No Helmet**| .21         |   .47          | .84         | Major lift in Model 3; strong generalization. |
+| **License Plate** | 0.64  | 0.70                 | .90    |   incremental lift in Model 3. |
+| **No Plate** | 0.00       | 0.36                  | 0.45           |No detection in Model 1; Slight increasein Model 2; Model 3 moderate detection. |
+| **No Vest**  | .35       |  .60        | .74          | Model 1 & Model 2 moderate performance; Model 3 performed best. |
+| **No Helmet**| .21         |   .47          | .84         | Major increase in performance in Model 3; |
 
 <br>
 
@@ -213,7 +213,7 @@ Epochs: 50 (Models 1&2), 100 (Model 3)
 ##  Hugging Face Dashboard – Compliance Detector  
 [ Live Demo on Hugging Face](https://huggingface.co/spaces/johngmunoz/Motorcycle)
 
-The Compliance Detector is an interactive Streamlit dashboard deployed on Hugging Face Spaces. It provides multiple modules for video and image-based motorcycle compliance detection.
+The Compliance Detector is an interactive Streamlit dashboard deployed on Hugging Face Spaces. It provides multiple tabs for video and image-based motorcycle compliance detection.
 
 ---
 
@@ -282,3 +282,4 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 
 ---
 
+> Disclaimer: ALL video data used in this demo was obtained from publicly available sources and is used strictly for non-commerical, educational research purposes.
