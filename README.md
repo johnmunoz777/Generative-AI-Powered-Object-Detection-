@@ -21,7 +21,7 @@ We utilized real-world data as well as synthetic video data generated with Googl
 
 [![Model Results](example_gifs/model_results.gif)](example_gifs/model_results.gif)
 <br>
-(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a 
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television
 # Problem Statement
 
 In April of 2025, Peru passed a new law requiring all motorcycle riders to wear certified helmets and reflective vests displaying their license plate numbers.
