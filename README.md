@@ -37,7 +37,7 @@ An automated detection system utilizing synthetic data generation to overcome da
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
 <br>
-<a href="https://www.pexels.com/" target="_blank">Video source</a>
+(Video source) <a href="https://www.pexels.com/" target="_blank">Pexels</a>
 
 
 ---
@@ -230,7 +230,7 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 ![Model Resul](example_gifs/final_model.gif)
 
 <br>
-(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television
 ---
 
 ###  Image Detections  
@@ -282,5 +282,5 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 
 ---
 <br>
-(source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television</a
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television <br>
 > Disclaimer: ALL video data used in this demo was obtained from publicly available sources and is used strictly for non-commerical, educational research purposes. Videos were attained from Panamericana Television  [ Panamericana Televisiob](https://panamericana.pe/)
