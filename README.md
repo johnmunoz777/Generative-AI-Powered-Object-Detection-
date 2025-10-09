@@ -9,7 +9,7 @@
 
 This repository contains the implementation of an Motorcycle Safety Compliance Object Detection Model. <br>
 We developed an automated compliance monitoring system capable of real-time detection of safety violations. <br>
-We utilized real-world data as well as synthetic video data generated with Google’s Veo 2 and Veo 3 models  <br>
+We utilized real-world data as well as synthetic video data generated with `Google’s Veo 2 and Veo 3 models`  <br>
 
 
 ### Key Achievement
