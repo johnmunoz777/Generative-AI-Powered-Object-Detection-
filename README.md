@@ -293,7 +293,7 @@ The Compliance Detector is an interactive Streamlit dashboard deployed on Huggin
 <br>
 (Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television 
 <br>
-(Unsplash) <a href="https://unsplash.com/photos/a-person-riding-a-motorcycle-on-a-city-street-0cJwbbIJbn8/" target="_blank">Unsplash</a>
+(Video source) <a href="https://www.pexels.com/" target="_blank">Pexels</a>
 
 
 ---
