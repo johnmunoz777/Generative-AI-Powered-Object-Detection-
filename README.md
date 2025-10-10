@@ -72,6 +72,10 @@ We developed three Object Detection Models, each building upon the previous mode
   <img src="example_gifs/Picture2.jpg" alt="Starter Imag" width="45%"/>
   <img src="example_gifs/b.gif" alt="Model Two GIF" width="45%"/>
 </p>
+(Video source) <a href="https://panamericana.pe/" target="_blank">Panamericana Television
+<br>
+<br>
+(Video source) <a href="https://elcomercio.pe/lima/transporte/gobierno-suspende-obligatoriedad-del-uso-del-chaleco-para-motociclistas-por-60-dias-mtc-seguridad-ciudadana-sicariato-ultimas-noticia/#google_vignette" target="_blank">GEC / Grupo El Comercio</a>
 
 
 #### Model 3: Hybrid Approach
