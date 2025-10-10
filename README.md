@@ -37,7 +37,8 @@ An automated detection system utilizing synthetic data generation to overcome da
 
 [![Model Results_two](example_gifs/dash_exseven.gif)](example_gifs/dash_exseven.gif)
 <br>
-(Unsplash) <a href="https://unsplash.com/photos/a-person-riding-a-motorcycle-on-a-city-street-0cJwbbIJbn8/"
+(Video source) <a href="https://www.pexels.com/" target="_blank">Pexels</a>
+
 
 
 ---
